@@ -1,0 +1,23 @@
+name: "Hello World Workflow"
+#name-> name of the workflow/pipeline
+
+# Trigger the workflow on push to master or production branches
+
+{ #whenever the event happens we will trigger the pipeline
+on:
+  push: #push-> whenever we push code on master/production branch
+    branches:
+      - master
+      - production
+}
+jobs: #defining the jobs
+  hello_world: #name of the job
+    runs-on: windows-latest #defines the environment of runner on which the job is going to run.
+
+    steps:     #These are the steps of the jobs
+      - name: Print Hello World
+        run: echo "Hello World"
+
+
+# Events that trigger workflows
+You can configure your workflows to run when specific activity on GitHub happens, at a scheduled time, or when an event outside of GitHub occurs.

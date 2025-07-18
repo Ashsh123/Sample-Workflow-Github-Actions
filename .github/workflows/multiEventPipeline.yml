@@ -1,0 +1,28 @@
+# name: "Multi event pipeline / workflow" # Nmae of the pipeline
+
+# on:
+#     push:  #Event : Whenever a push is made to the repository on the master branch
+#         branches:
+#             - master
+
+# jobs:
+#     on-push:
+#         runs-on: window-latest
+#         steps:
+#             -name: "Running on master push"
+#              run: echo "Running on master push"
+
+    
+name: "Multi event pipeline / workflow" # Nmae of the pipeline
+
+on:
+  push: #Event : Whenever a push is made to the repository on the master branch
+    branches:
+      - master
+
+jobs:
+  on-push: # jobs name
+    runs-on: windows-latest
+    steps: # Steps to be executed in the job
+      - name: "Running on master push"
+        run: echo "Running on master push"
