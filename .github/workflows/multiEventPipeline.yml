@@ -77,7 +77,7 @@ jobs:
 
   on-pull-request:
     if: ${{ github.event_name == 'pull_request' }}
-    runs-on: window-latest
+    runs-on: windows-latest
     steps:
         - name: "Running on pull request"
           run: echo "Running on pull request"
