@@ -55,7 +55,7 @@
 #           run: echo "Running on pull request"
       
 
-# With if : Trigger when the condition matched
+# With if : Trigger when the condition matched 
 name: "Multi event pipeline / workflow" # Nmae of the pipeline
 
 on:
