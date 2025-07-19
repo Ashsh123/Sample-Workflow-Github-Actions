@@ -122,6 +122,7 @@ on:
       - master
     types:
       - closed
+      - opened 
   workflow_dispatch: #Event : whenever a workflow is manually triggerd
 
 jobs:
